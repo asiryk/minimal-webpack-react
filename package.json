@@ -1,7 +1,6 @@
 {
   "name": "minimal-webpack-react",
   "version": "0.0.0",
-  "description": "",
   "type": "module",
   "private": true,
   "main": "index.js",
@@ -9,6 +8,7 @@
     "watch": "webpack serve --open --mode development",
     "build": "webpack --mode production"
   },
+  "license": "MIT",
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

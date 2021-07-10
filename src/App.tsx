@@ -1,7 +1,6 @@
 import React from "react";
 
 function App() {
-    debugger
     return <div>
         <h1>Hello, World!</h1>
     </div>

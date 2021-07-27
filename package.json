@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "type": "module",
   "private": true,
-  "main": "index.js",
+  "main": "src/index.ts",
   "scripts": {
-    "watch": "webpack serve --open --mode development",
-    "build": "webpack --mode production"
+    "watch": "webpack serve --open --mode=development",
+    "build": "webpack --mode=production"
   },
   "license": "MIT",
   "dependencies": {

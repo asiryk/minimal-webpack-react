@@ -5,10 +5,9 @@ import HTMLPlugin from "html-webpack-plugin";
 
 const BUILD_PATH = resolve("dist");
 const SOURCE_PATH = resolve("src");
-const IS_DEV_MODE = process.argv.includes("development");
+const IS_DEV_MODE = process.argv.reduce((acc, arg) => acc || arg.includes("development"), false);
 
 const config = {
-  mode: IS_DEV_MODE ? "development" : "production",
   devtool: IS_DEV_MODE && "cheap-module-source-map",
   entry: join(SOURCE_PATH, "index.ts"),
   output: {
